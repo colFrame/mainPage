@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<%-include("partials/head")%>
+<html lang="en">
+  <body>
+    <header>
+      <div class="homeHeader"><%-include("partials/nav_bar")%></div>
+    </header>
+
+    <main class="section-main">
+      <section class="aboutUs-main">
+        <div class="content">
+          <div class="image-content">
+            <img src="./images/team-photo.jpg" alt="team-photo" />
+            <div class="image-background"></div>
+          </div>
+
+          <div class="text-content">
+            <h2>¿Quiénes somos?</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              sunt porro a unde blanditiis, officia tempore fugiat quasi
+              doloribus obcaecati incidunt accusamus voluptatibus error ad
+              voluptatem eveniet odio vitae eum!
+            </p>
+            <a
+              href="https://wa.me/3103896989?text=ColFrame,%20¿Cómo%20podemos%20ayudarte?"
+              >Contáctanos</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include("partials/footer")%>
+
+    <!-- script carrousel -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const config = {
+        type: "carousel",
+        perView: 1,
+        startAt: 0,
+        focusar: true,
+        keyboard: true,
+        hoverpause: true,
+        gap: 0,
+      };
+      new Glide(".glide", config).mount();
+    </script>
+    <script src="./js/events.js"></script> -->
+  </body>
+</html>

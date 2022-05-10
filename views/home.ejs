@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<%-include("partials/head")%>
+<html lang="en">
+  <body>
+    <header>
+      <div class="homeHeader"><%-include("partials/nav_bar")%></div>
+    </header>
+
+    <main class="section-main">
+      <section class="home-banner">
+        <h1><span>Steel Framing</span>, construcción en acero</h1>
+        <a href="/aboutUs">Acerca de nosotros</a>
+      </section>
+
+      <section class="aboutUs-section">
+        <h2>¿Por qué ColFrame?</h2>
+        <p>
+          Somos una compañía que ofrece soluciones confiables y eficaces para el
+          sector de la construcción mediante métodos innovadores, tiempos de
+          producción y ejecución reducidos y amigables con el medio ambiente.
+        </p>
+        <a
+          href="https://wa.me/3103896989?text=ColFrame,%20¿Cómo%20podemos%20ayudarte?"
+          >Contáctanos</a
+        >
+      </section>
+
+      <section class="services-section">
+        <h2>Servicios</h2>
+        <div class="services">
+          <div class="image-container">
+            <img src="./images/categories/check-image.jpg" alt="check-image" />
+            <div class="text-container"></div>
+            <p class="text">Revisamos tu proyecto sin compromiso.</p>
+          </div>
+          <div class="image-container">
+            <img src="./images/categories/cash-image.jpg" alt="check-image" />
+            <div class="text-container"></div>
+            <p class="text">
+              Brindamos una cotización de manera rápida y eficiente.
+            </p>
+          </div>
+          <div class="image-container">
+            <img
+              src="./images/categories/partnership-image.jpg"
+              alt="check-image"
+            />
+            <div class="text-container"></div>
+            <p class="text">Recomendamos aliados para finalizar tu proyecto.</p>
+          </div>
+        </div>
+
+        <a href="/services">Ver más</a>
+      </section>
+
+      <section class="alliances-section" id="alianzas">
+        <h2>Alianzas</h2>
+        <p>Colmena y Dicoing</p>
+        <!-- <a href="#">Ver alianza</a> -->
+      </section>
+
+      <section class="carrousel">
+        <h2 class="carrousel-title">Algunos proyectos finalizados</h2>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <!-- images -->
+              <% for(let x=0;x<5;x++){%>
+              <li class="glide__slide">
+                <div
+                  class="carrouselItem"
+                  style="
+                    background: linear-gradient(
+                        to bottom,
+                        rgba(0, 0, 0, 0),
+                        rgba(0, 0, 0, 0)
+                      ),
+                      url('../images/banners/banner<%=x+1%>.jpg') no-repeat
+                        center center;
+                  "
+                ></div>
+              </li>
+              <%}%>
+            </ul>
+          </div>
+
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include("partials/footer")%>
+
+    <!-- script carrousel -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const config = {
+        type: "carousel",
+        perView: 1,
+        startAt: 0,
+        focusar: true,
+        keyboard: true,
+        hoverpause: true,
+        gap: 0,
+      };
+      new Glide(".glide", config).mount();
+    </script>
+    <script src="./js/events.js"></script>
+  </body>
+</html>
