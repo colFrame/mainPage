@@ -1,6 +1,6 @@
 const aboutUsController = {
   display: function (req, res) {
-    res.render("AboutUs");
+    res.render("aboutUs");
   },
 };
 
