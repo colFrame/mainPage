@@ -303,7 +303,7 @@ h2 {
 .services-section,
 .alliances-section,
 .aboutUs-section,
-.carrousel {
+.projects-section {
   width: 90%;
   margin: auto;
   padding: 3rem;
@@ -314,19 +314,19 @@ h2 {
   .services-section h2,
   .alliances-section h2,
   .aboutUs-section h2,
-  .carrousel h2 {
+  .projects-section h2 {
     margin-top: 1rem;
     text-align: center; }
   .services-section p,
   .alliances-section p,
   .aboutUs-section p,
-  .carrousel p {
+  .projects-section p {
     font-size: 1.3rem;
     margin: 2rem auto; }
   .services-section a,
   .alliances-section a,
   .aboutUs-section a,
-  .carrousel a {
+  .projects-section a {
     margin: 1rem auto;
     padding: 1rem;
     font-size: 1rem;
@@ -342,11 +342,10 @@ h2 {
     .services-section a:hover,
     .alliances-section a:hover,
     .aboutUs-section a:hover,
-    .carrousel a:hover {
+    .projects-section a:hover {
       transform: translate(2px, -2px); }
 
-.services-section,
-.carrousel {
+.services-section {
   background-color: rgba(158, 157, 157, 0.2); }
 
 .services-section h2 {
@@ -385,6 +384,46 @@ h2 {
       text-align: center; }
     .services-section .services .image-container:hover .text-container {
       background-color: rgba(0, 0, 0, 0.3); }
+
+.projects-section h2 {
+  margin-bottom: 2rem; }
+
+.projects-section .projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-bottom: 2rem; }
+  .projects-section .projects .image-container {
+    width: 350px;
+    margin-right: 0.5rem;
+    position: relative;
+    margin-bottom: 1rem; }
+    .projects-section .projects .image-container img {
+      height: 100%;
+      width: 100%;
+      min-height: 220px;
+      max-height: 220px; }
+    .projects-section .projects .image-container .text-container {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.05);
+      transition: 0.5s; }
+    .projects-section .projects .image-container .text {
+      width: 80%;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center; }
+    .projects-section .projects .image-container:hover .text-container {
+      background-color: rgba(0, 0, 0, 0.02); }
 
 @media (max-width: 900px) {
   .home-banner {
@@ -525,9 +564,11 @@ h2 {
       text-align: center;
       padding: 0rem 2rem; }
       .services-main .content .text-content .service {
+        border-left: solid 4px black;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        padding-left: 8px;
         margin-bottom: 2rem; }
       .services-main .content .text-content i {
         font-size: 3rem;
