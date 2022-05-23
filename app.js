@@ -19,7 +19,7 @@ app.use(express.static(publicPath));
 app.set("view engine", "ejs");
 
 //Local host is being ran in port 3000
-app.listen(80, () => console.log("Local host is being ran in port 3000"));
+app.listen(80, () => console.log("Local host is being ran in port 80"));
 
 //main Route is set
 app.use("/", mainRoute);
