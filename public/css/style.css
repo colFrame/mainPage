@@ -96,6 +96,17 @@ h2 {
   .icon-whatsapp .fa-whatsapp-square {
     color: #25d366; }
 
+.icon-logo {
+  position: fixed;
+  font-size: 5rem;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 1000;
+  border-radius: 50%;
+  border: solid 2px black; }
+  .icon-logo img {
+    width: 8rem; }
+
 @media (max-width: 900px) {
   .navigation__checkbox {
     display: none; }
@@ -231,6 +242,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     font-size: 1.5rem; }
+    .footer-section__socialMedia .scottsdaleFraming-text {
+      margin: 2rem 0 1rem 0; }
     .footer-section__socialMedia .icon-container {
       margin: 0rem 0.5rem; }
     .footer-section__socialMedia--icons {
@@ -256,6 +269,8 @@ h2 {
         margin-bottom: 1rem; }
     .footer-section__socialMedia {
       font-size: 2.5rem; }
+      .footer-section__socialMedia .scottsdaleFraming {
+        width: 25rem; }
       .footer-section__socialMedia--icons {
         font-size: 4rem; } }
 
@@ -396,7 +411,7 @@ h2 {
   align-items: stretch;
   margin-bottom: 2rem; }
   .projects-section .projects .image-container {
-    width: 350px;
+    width: 330px;
     margin-right: 0.5rem;
     position: relative;
     margin-bottom: 1rem; }
@@ -570,7 +585,8 @@ h2 {
         justify-content: flex-start;
         align-items: center;
         padding-left: 8px;
-        margin-bottom: 2rem; }
+        margin-bottom: 2rem;
+        text-align: left !important; }
       .services-main .content .text-content i {
         font-size: 3rem;
         color: black; }
