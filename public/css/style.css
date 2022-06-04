@@ -98,14 +98,16 @@ h2 {
 
 .icon-logo {
   position: fixed;
-  font-size: 5rem;
-  bottom: 2rem;
+  bottom: 3rem;
   left: 2rem;
   z-index: 1000;
   border-radius: 50%;
+  background-color: white;
   border: solid 2px black; }
   .icon-logo img {
-    width: 8rem; }
+    width: 5.5rem;
+    height: 5.5rem;
+    transform: scale(1.7); }
 
 @media (max-width: 900px) {
   .navigation__checkbox {
@@ -578,7 +580,7 @@ h2 {
       font-size: 1.3rem;
       margin: 2rem auto;
       text-align: center;
-      padding: 0rem 2rem; }
+      padding: 0rem 1rem; }
       .services-main .content .text-content .service {
         border-left: solid 4px black;
         display: flex;
