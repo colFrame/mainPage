@@ -26,7 +26,7 @@ projectsSection.addEventListener("click", function (e) {
             <div class="carrouselItem">
               <img
                 class="carrousel-Image"
-                src="./images/proyectos/${title}/1.jpeg"
+                src="/images/proyectos/${title}/1.jpeg"
               />
             </div>
           </li>
@@ -34,7 +34,7 @@ projectsSection.addEventListener("click", function (e) {
           <div class="carrouselItem">
             <img
               class="carrousel-Image"
-              src="./images/proyectos/${title}/2.jpeg"
+              src="/images/proyectos/${title}/2.jpeg"
             />
           </div>
         </li>
@@ -42,7 +42,7 @@ projectsSection.addEventListener("click", function (e) {
         <div class="carrouselItem">
           <img
             class="carrousel-Image"
-            src="./images/proyectos/${title}/3.${
+            src="/images/proyectos/${title}/3.${
       title == "Beat" ? "JPG" : "jpeg"
     }"
           />
@@ -52,7 +52,7 @@ projectsSection.addEventListener("click", function (e) {
       <div class="carrouselItem">
         <img
           class="carrousel-Image"
-          src="./images/proyectos/${title}/4.jpeg"
+          src="/images/proyectos/${title}/4.jpeg"
         />
       </div>
     </li>
