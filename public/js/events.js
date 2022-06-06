@@ -11,7 +11,7 @@ navBarList.addEventListener("click", function (e) {
 });
 
 projectsSection.addEventListener("click", function (e) {
-  // console.log(e.target.id);
+  console.log(e.target);
   e.preventDefault();
   if (e.target.className == "text-container") {
     let carousel = document.querySelector(".carousel-section");
