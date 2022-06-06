@@ -42,7 +42,9 @@ projectsSection.addEventListener("click", function (e) {
         <div class="carrouselItem">
           <img
             class="carrousel-Image"
-            src="./images/proyectos/${title}/3.jp${title == "Beat" ? "" : "e"}g"
+            src="./images/proyectos/${title}/3.${
+      title == "Beat" ? "JPG" : "jpeg"
+    }"
           />
         </div>
       </li>
@@ -62,7 +64,6 @@ projectsSection.addEventListener("click", function (e) {
         <button class="glide__bullet" data-glide-dir="=1"></button>
         <button class="glide__bullet" data-glide-dir="=2"></button>
         <button class="glide__bullet" data-glide-dir="=3"></button>
-        <button class="glide__bullet" data-glide-dir="=4"></button>
       </div>
     </div>
   </div>`;
@@ -72,7 +73,7 @@ projectsSection.addEventListener("click", function (e) {
     type: "carousel",
     perView: 1,
     startAt: 0,
-    // focusar: true,
+    focusar: true,
     keyboard: true,
     hoverpause: true,
     gap: 0,
