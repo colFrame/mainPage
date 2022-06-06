@@ -35,6 +35,10 @@ html {
   html {
     font-size: 9px; } }
 
+@media (max-width: 300px) {
+  html {
+    font-size: 7px; } }
+
 * {
   font-family: "Poppins";
   letter-spacing: 2px; }
@@ -103,7 +107,8 @@ h2 {
   z-index: 1000;
   border-radius: 50%;
   background-color: white;
-  border: solid 2px black; }
+  border: solid 2px black;
+  box-shadow: 0px 2px 18px #6a69688f; }
   .icon-logo img {
     width: 5.5rem;
     height: 5.5rem;
@@ -420,8 +425,8 @@ h2 {
     .projects-section .projects .image-container img {
       height: 100%;
       width: 100%;
-      min-height: 220px;
-      max-height: 220px; }
+      min-height: 200px;
+      max-height: 200px; }
     .projects-section .projects .image-container .text-container {
       top: 0;
       left: 0;
